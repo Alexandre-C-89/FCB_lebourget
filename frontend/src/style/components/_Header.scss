@@ -23,6 +23,9 @@
             flex-wrap: wrap;
             &_item{
                 margin: 10px 10px;
+                & a{
+                    color: #fff;
+                }
             }
         }
     }
