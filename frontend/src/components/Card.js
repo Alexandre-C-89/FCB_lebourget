@@ -4,9 +4,10 @@ import ArticleList from "../data/ArticleList";
 function Card() {
     return (
       <div className="container">
-        {ArticleList.map(({ id, title, image, description }, index) => (
+        {ArticleList.map(({ id, title, image, description, date }, index) => (
           <div key={`${id}-${index}`} className="card">
             <div className="card_title">
+              <div className="card_title_date">{date}</div>
               <h3>
                 {title}
               </h3>
