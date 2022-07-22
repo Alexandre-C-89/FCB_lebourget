@@ -1,26 +1,78 @@
-.form{
-    background: linear-gradient(to top, rgb(221, 221, 221) 5%, #fff);
-    background-color: rgba(109, 109, 109, 0.3);
-    width: 40%;
-    height: 400px;
+.box{
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    background: #fff;
+    border: 3px solid rgb(218, 47, 47);
+    border-radius: 10px;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 100px auto;
-    &_contact{
+    & h2 {
+        color: #666;
+        font-weight: 500;
+        font-size: 28px;
+        margin-bottom: 45px;
+    }
+    .form_bloc .form_bloc_group{
+        position: relative;
         display: flex;
-        flex-direction: column;
-        margin: 20px;
-        & label{
-            margin: 10px;
-            & input {
-                border: 1px solid rgb(218, 47, 47);
-                margin: 5px;
-                width: 150px;
-                height: 30px;
-                border-radius: 5px;
-            }
-        }
+        margin-bottom: 50px;
+    }
+    .form_bloc .form_bloc_group label {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        color: #aaa;
+        font-size: 20px;
+        transition: 0.4s ease-out;
+    }
+    .form_bloc .form_bloc_group input {
+        display: block;
+        width: 400px;
+        padding: 10px 0px;
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 3px solid rgb(218, 47, 47);
+        color: #666;
+        transition: .4s ease-out;
+    }
+    .form_bloc_group textarea {
+        border: 1px solid rgb(218, 47, 47);
+    }
+    .form_bloc_group:nth-child(4){
+        margin-bottom: 65px;
+        justify-content: center;
+    }
+    .form_bloc .form_bloc_group .button_sub{
+        display: block;
+        width: auto;
+        padding: 15px 60px;
+        border: 2px solid rgb(238, 127, 127);
+        border-radius: 999px;
+        background-image: linear-gradient(to right, transparent 50%, rgb(218, 47, 47) , rgb(238, 106, 106));
+        background-size: 200%;
+        color: rgb(218, 47, 47);
+        font-size: 24px; 
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .form_bloc .form_bloc_group .button_sub:hover{
+        color: #fff;
+        background-position: 100%;
+        border: 3px solid #fff;
+    }
+    .form_bloc .form_bloc_group:focus-within label,
+    .form_bloc .form_bloc_group.animation label{
+        top: 0px;
+        transform: translateY(-100%);
+        color: rgb(218, 47, 47);
+    }
+    .form_bloc .form_bloc_group:focus-within input,
+    .form_bloc .form_bloc_group.animation input{
+        border-bottom-color: rgb(218, 47, 47);
     }
 }
