@@ -22,12 +22,20 @@
     }
     .form_bloc .form_bloc_group label {
         position: absolute;
-        top: 50%;
         left: 0px;
         transform: translateY(-50%);
         color: #aaa;
         font-size: 20px;
         transition: 0.4s ease-out;
+    }
+    .form_bloc .form_bloc_group textarea {
+        top: 50%;
+        left: 0px;
+        transform: translateY(7%);
+        color: #aaa;
+        font-size: 20px;
+        transition: 0.4s ease-out;
+        border: 1.5px solid rgb(218, 47, 47);
     }
     .form_bloc .form_bloc_group input {
         display: block;
@@ -40,9 +48,7 @@
         color: #666;
         transition: .4s ease-out;
     }
-    .form_bloc_group textarea {
-        border: 1px solid rgb(218, 47, 47);
-    }
+    
     .form_bloc_group:nth-child(4){
         margin-bottom: 65px;
         justify-content: center;
