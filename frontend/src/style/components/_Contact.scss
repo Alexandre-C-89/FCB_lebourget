@@ -1,0 +1,26 @@
+.form{
+    background: linear-gradient(to top, rgb(221, 221, 221) 5%, #fff);
+    background-color: rgba(109, 109, 109, 0.3);
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    &_contact{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        & label{
+            margin: 10px;
+            & input {
+                border: 1px solid rgb(218, 47, 47);
+                margin: 5px;
+                width: 150px;
+                height: 30px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

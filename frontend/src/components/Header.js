@@ -1,12 +1,12 @@
 import React from "react";
 import "../style/components/_Header.scss";
 import Logo from "../assets/logo.JPG";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import contact from "../pages/contact";
 
 
 const Header = () => {
     return (
-      <Router>
         <div className="header">
           <img src={Logo} alt="logo du club de football" />
           <h1>FCB Le Bourget</h1>
@@ -22,12 +22,11 @@ const Header = () => {
                 <Link to="/galerie">Galerie</Link>
               </li>
               <li className="header_nav_list_item">
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" element={contact}>Contact</Link>
               </li>
             </ul>
           </nav>
         </div>
-      </Router>
     );
 };
 
